@@ -1,0 +1,258 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth
+}
+body{
+    font-family: 'Merriweather', serif;
+}
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navitems{
+    float: right;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  .topnav.scrolled {
+    background-color: black !important;
+    transition: background-color 200ms linear;
+  }
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url('https://images.pexels.com/photos/1158394/pexels-photo-1158394.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.home {
+    opacity: 0;
+    transition: 1s all ease;
+}
+.home.active {
+    opacity: 1;
+}
+.intro{
+    color: white;
+    font-size: 50px;
+    padding-left: 30px;
+}
+.subint{
+    color: white;
+    padding-left: 30px;
+}
+.about{
+    height: fit-content;
+    width: 100%;
+    background-color: black;
+    color:white;
+}
+.aboutmove {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.aboutmove.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.ahead{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+    padding-top: 80px;
+    font-family: 'Philosopher', sans-serif;
+}
+.imageflex2{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 1.5%;
+    background-color: #121212;
+    box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #4c4c4c, 0 0 30px #5d5d5d;
+    animation: blink 0.7s infinite alternate;
+}
+@keyframes blink {
+    100% {
+      box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #4c4c4c,0 0 60px #5d5d5d;
+    }
+  }
+.image{
+    padding: 20px;
+}
+img{
+    height: 450px;
+    border-radius: 5%;
+}
+.aflex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.aconhead{
+    font-size: 40px;
+}
+.acontent{
+    font-size: 18px;
+    padding-right: 20px;
+}
+.contact{
+    height: fit-content;
+    background-color: black;
+    color: white;
+}
+.imageflex{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+.imageflex {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.imageflex.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+input{
+    width: 385px;
+    height: 30px;
+}
+#btn{
+    height: 40px;
+    width: 100px;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    font-family: 'Merriweather', serif;
+    border-radius: 6%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#btn:hover{
+    background-color: rgb(154, 152, 152);
+    color: black;
+}
+.projects{
+    height: fit-content;
+    background: black;
+    padding-bottom: 10%;
+    width: 100%;
+}
+.phead{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    font-family: 'Philosopher', sans-serif;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cards {
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.cards.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.card{
+    background: linear-gradient(315deg, #121212 0%, #292929 100%);
+    height: 400px;
+    width:300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: white;
+    position: relative;
+    animation: cardanim 2s infinite ease-in-out;
+}
+@keyframes cardanim {
+    0%{
+        background: linear-gradient(315deg, #121212 0%, #292929 100%);
+    }
+    100%{
+        background: linear-gradient(315deg, #292929 0%,#121212 100% );
+    }
+}
+
+a{
+    color: lightgray;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+.bhead{
+    font-size: 20px;
+}
+.icon{
+    position: absolute;
+    filter: grayscale(10);
+    color: aliceblue;
+    top: 0px;
+    right: 0px;
+    height: 20px;
+    margin: 10px;
+}

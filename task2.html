@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="task2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="home" id="homenav">
+        <div class="topnav" id="myTopnav">
+            <div class="navitems">
+                <a href="#homenav" class="active">Home</a>
+                <a href="#aboutnav">About</a>
+                <a href="#projectnav">Project</a>
+                <a href="#contactnav">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div class="intro">
+            Aneena Joseph
+        </div>
+        <div class="subint">
+            FRONTEND WEB DEVELOPER
+        </div>
+    </div>
+    <div class="about" id="aboutnav">
+        <div class="ahead">
+            <h1>ABOUT</h1>
+        </div>
+        <div class="aboutmove">
+            <div class="imageflex2">
+                <div class="image">
+                    <img src="https://evolllution.com/wp-content/uploads/2021/05/Hardy-May-28-SIZED.jpeg" alt="">
+                </div>
+                <div class="aflex">
+                    <div class="aconhead">
+                        Hey There! I am Aneena Joseph.
+                        <br><br>
+                    </div>
+                    <div class="acontent">
+                        I am a front end web developer who is currently pursuing Bachelor of Technology Degree in
+                        Computer
+                        science.
+                        I consider myself as hardworking, punctual, effective and team player.
+                        <br>
+                        I am excited to continue refining my skills with the right company.
+                        <br>
+                        Check out my works here.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects" id="projectnav">
+        <div class="phead">
+            <h1>PROJECTS</h1>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <a href="https://www.istembcet.in" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2413/2413618.png" class="icon" alt="">
+                </a>
+                <p><b class="bhead">ISTE MBCET Website</b>
+                    <br><br>
+                    (Home, Events and Team Pages)
+                    <br>
+                    Using HTML, CSS, Javascript
+                </p>
+            </div>
+            <div class="card">
+                <a href="http://ai-medialab.herokuapp.com/clg.html" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2413/2413618.png" class="icon" alt="">
+                </a>
+                <p><b class="bhead">AI Media Lab Website</b>
+                    <br><br>
+                    Using HTML, CSS, Javascript
+                </p>
+            </div>
+            <div class="card">
+                <a href=" https://aneenajoseph10.github.io/google-keep-clone/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2413/2413618.png" class="icon" alt="">
+                </a>
+                <p><b class="bhead">Google Keep Clone</b>
+                    <br><br>
+                    Using HTML, CSS, Javascript
+                </p>
+            </div>
+            <div class="card">
+                <a href="https://aneenajoseph10.github.io/Sample-airline/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2413/2413618.png" class="icon" alt="">
+                </a>
+                <p><b class="bhead">Sample Airline Website</b>
+                    <br><br>
+                    Using HTML, CSS, Bootstrap
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contactnav">
+        <div class="ahead">
+            <h1>CONTACT</h1>
+        </div>
+        <div class="imageflex">
+            <div class="aflex">
+                <div class="aconhead">
+                    Hello! Contact me here.
+                    <br><br>
+                </div>
+                <div class="acontent">
+                    <form id="gform" name="gform"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLScYMYSjC0KZw4xJDNBIrqdlgAe0zQE6G2ZUDAcZbfHCAtIx8g/formResponse?"
+                        target="hidden_iframe" onsubmit="submitted=true;">
+                        <p><label for="entry.1301905731">Name </label></p>
+                        <input type="text" name="entry.1301905731" id="entry.1301905731" required />
+                        <br>
+                        <br>
+                        <p><label for="entry.895794326">Email </label></p>
+                        <input type="email" name="entry.895794326" id="entry.895794326" required />
+                        <br>
+                        <br>
+                        <p><label for="number">Phone Number </label></p>
+                        <input type="number" name="number" id="number">
+                        <br>
+                        <br>
+                        <p><label for="entry.215246426">Message </label></p>
+                        <textarea id="message" name="message" rows="6" cols="50" name="entry.215246426"
+                            id="entry.215246426" required></textarea>
+                        <br>
+                        <button type="submit" id="btn" value="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="image">
+                <img src="https://images.pexels.com/photos/1416530/pexels-photo-1416530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+
+    <script>
+        function revealev() {
+            var reveals = document.querySelectorAll(".imageflex");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", revealev);
+    </script>
+    <script>
+        function revealpr() {
+            var reveals = document.querySelectorAll(".cards");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", revealpr);
+    </script>
+    <script>
+        function revealab() {
+            var reveals = document.querySelectorAll(".aboutmove");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", revealab);
+    </script>
+    <script>
+        function revealho() {
+            var reveals = document.querySelectorAll(".home");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("load", revealho);
+    </script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".topnav");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted){}"></iframe>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function (e) {
+            $('#gform *').fadeOut(2);
+            $('#gform').prepend('Your response has been submitted. We will get back to you as soon as possible.');
+        });
+    </script>
+</body>
+
+</html>
